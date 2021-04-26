@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: rdi-service
+  data:
+    mongodb:
+      uri: mongodb+srv://walid:w_lid@cluster0.u3vvf.mongodb.net/rdi_database?retryWrites=true&w=majority
+
+server:
+  port: 8771
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+
+ribbon:
+  eureka:
+    enabled: true
+
