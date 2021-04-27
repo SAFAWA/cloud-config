@@ -1,0 +1,22 @@
+server:
+  port: 8770
+
+spring:
+  application:
+    name: authservice
+
+zuul:
+  prefix: /api/v1
+  ignored-services: '*'
+  host:
+    max-total-connections: 1000
+    max-per-route-connections: 1000
+  routes:
+    rdi-service:
+      path: /rdi/**
+      serviceId: rdiservice
+      stripPrefix: false
+
+ribbon:
+  eureka:
+    enabled: true
