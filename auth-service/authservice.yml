@@ -18,11 +18,11 @@ zuul:
       stripPrefix: false
     formation-service:
       path: /formation/**
-      serviceId: formationservice
+      serviceId: serviceformation
       stripPrefix: false
     encadrement-service:
       path: /encadrement/**
-      serviceId: encadrementservice
+      serviceId: serviceencadrement
       stripPrefix: false
 
 ribbon:
