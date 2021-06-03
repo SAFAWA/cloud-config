@@ -24,6 +24,10 @@ zuul:
       path: /encadrement/**
       serviceId: serviceencadrement
       stripPrefix: false
+    enseignant-service:
+      path: /enseignant/**
+      serviceId: serviceenseignant
+      stripPrefix: false
 
 ribbon:
   eureka:
