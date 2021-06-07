@@ -6,7 +6,7 @@ spring:
     name: authservice
 
 zuul:
-  sensitive-headers: Cookie,Set-Cookie,Authorization
+  sensitive-headers:
   prefix: /api/v1
   ignored-services: '*'
   host:
@@ -34,7 +34,7 @@ zuul:
       serviceId: serviceetudiant
       stripPrefix: false
     service-service:
-      sensitiveHeaders: Cookie,Set-Cookie
+      sensitiveHeaders:
       path: /service/**
       serviceId: servicesservice
       stripPrefix: false
