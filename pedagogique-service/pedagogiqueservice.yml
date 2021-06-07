@@ -1,10 +1,10 @@
 spring:
   application:
-    name: serviceservices
+    name: pedagogiqueservice
 
 
 server:
-  port: 8791
+  port: 8790
 
 eureka:
   client:
