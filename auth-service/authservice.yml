@@ -34,6 +34,7 @@ zuul:
       serviceId: serviceetudiant
       stripPrefix: false
     service-service:
+      sensitiveHeaders: Cookie,Set-Cookie
       path: /service/**
       serviceId: servicesservice
       stripPrefix: false
