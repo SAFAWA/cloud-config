@@ -32,6 +32,14 @@ zuul:
       path: /etudiant/**
       serviceId: serviceetudiant
       stripPrefix: false
+    service-service:
+      path: /service/**
+      serviceId: servicesservice
+      stripPrefix: false
+    pedagogique-service:
+      path: /pedagogique/**
+      serviceId: pedagogiqueservice
+      stripPrefix: false
 
 ribbon:
   eureka:
