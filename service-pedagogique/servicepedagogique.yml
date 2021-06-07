@@ -1,10 +1,10 @@
 spring:
   application:
-    name: rdiservice
+    name: servicepedagogique
 
 
 server:
-  port: 8771
+  port: 8790
 
 eureka:
   client:
