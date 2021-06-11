@@ -42,6 +42,10 @@ zuul:
       path: /pedagogique/**
       serviceId: pedagogiqueservice
       stripPrefix: false
+    fileupload-service:
+      path: /file/**
+      serviceId: fileuploadservice
+      stripPrefix: false
 
 ribbon:
   eureka:
