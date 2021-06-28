@@ -46,6 +46,10 @@ zuul:
       path: /file/**
       serviceId: fileuploadservice
       stripPrefix: false
+    calendrier-service:
+      path: /file/**
+      serviceId: calendrierservice
+      stripPrefix: false
 
 ribbon:
   eureka:
