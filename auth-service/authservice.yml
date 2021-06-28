@@ -47,7 +47,7 @@ zuul:
       serviceId: fileuploadservice
       stripPrefix: false
     calendrier-service:
-      path: /file/**
+      path: /calendrier/**
       serviceId: calendrierservice
       stripPrefix: false
 
