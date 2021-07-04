@@ -59,7 +59,7 @@ ribbon:
     
 hystrix:
   command:
-    myusers-service:
+    rdi-service:
       execution:
         isolation:
           thread:
