@@ -6,9 +6,6 @@ spring:
     name: authservice
 
 zuul:
-  ribbon:
-    ConnectTimeout: 10000000
-    ReadTimeout: 10000000
   sensitive-headers:
   prefix: /api/v1
   ignored-services: '*'
@@ -57,3 +54,11 @@ zuul:
 ribbon:
   eureka:
     enabled: true
+    
+hystrix:
+  command:
+    myusers-service:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000000
