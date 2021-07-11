@@ -54,7 +54,7 @@ zuul:
       stripPrefix: false
     statistique-service:
       path: /statistique/**
-      serviceId: statistiqueservice
+      serviceId: servicestatistique
       stripPrefix: false
 ribbon:
   eureka:
