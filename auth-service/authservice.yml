@@ -52,7 +52,10 @@ zuul:
       path: /calendrier/**
       serviceId: calendrierservice
       stripPrefix: false
-
+    statistique-service:
+      path: /statistique/**
+      serviceId: statistiqueservice
+      stripPrefix: false
 ribbon:
   eureka:
     enabled: false
