@@ -56,6 +56,10 @@ zuul:
       path: /statistique/**
       serviceId: servicestatistique
       stripPrefix: false
+    notification-service:
+      path: /notification/**
+      serviceId: NOTIFICATIONSERVICE
+      stripPrefix: false
 ribbon:
   eureka:
     enabled: false
